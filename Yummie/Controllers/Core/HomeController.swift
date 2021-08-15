@@ -19,7 +19,7 @@ class HomeController: UIViewController {
     ]
     
     var dishes: [Dish] = [
-        .init(id: "id1", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
+        .init(id: "id1", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted, This is the best I have ever tasted, This is the best I have ever tasted, This is the best I have ever tasted, This is the best I have ever tasted, This is the best I have ever tasted"),
         .init(id: "id2", name: "Pasta", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
         .init(id: "id3", name: "Grilled Cheese", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
         .init(id: "id4", name: "Pizza", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
@@ -144,5 +144,34 @@ extension HomeController: UICollectionViewDataSource {
 // MARK: - UICollectionViewDelegate
 
 extension HomeController: UICollectionViewDelegate {
+    
+    ///
+    /// - if we clicked on any item of the category collection view do something
+    ///
+    /// - if we clicked on any item of the dishes or the specials collection views
+    ///   switch each case and pass the right item from the equivelant array to
+    ///   the dish details controller
+    ///
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            //
+        } else {
+            ///
+            /// instantiate() comes from the view controller extension file
+            ///
+            let controller = DishDetailsController.instantiate()
+            
+            switch collectionView {
+                case dishesCollectionView:
+                    controller.dish = dishes[indexPath.row]
+                case specialsCollectionView:
+                    controller.dish = specials[indexPath.row]
+                default:
+                    controller.dish = dishes[indexPath.row]
+            }
+            
+            navigationController?.pushViewController(controller, animated: true)
+        }
+    }
     
 }

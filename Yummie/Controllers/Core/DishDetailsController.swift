@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class DishDetailsController: UIViewController {
     
@@ -10,15 +11,29 @@ class DishDetailsController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     
+    // MARK: - Properties
+
+    var dish: Dish!
+    
     // MARK: - IBActions
 
-    @IBAction func placeOrderButtonClicked(_ sender: UIButton) {        
-    }
+    @IBAction func placeOrderButtonClicked(_ sender: UIButton) {}
 
     // MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        populateUI()
+    }
+    
+    // MARK: - Helper Functions
+    
+    private func populateUI() {
+        dishImage.kf.setImage(with: dish.image?.asURL, placeholder: Constants.categoryPlaceholderImage)
+        dishTitle.text = dish.name
+        descriptionLabel.text = dish.description
+        caloriesLabel.text = dish.formattedCalories
     }
 
 }
