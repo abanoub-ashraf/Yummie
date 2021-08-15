@@ -21,6 +21,10 @@ class DishesCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Helper Functions
+    
+    static func nib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
 
     func setup(_ dish: Dish) {
         titleLabel.text = dish.name

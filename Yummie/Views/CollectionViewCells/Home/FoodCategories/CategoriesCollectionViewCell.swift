@@ -19,6 +19,10 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     }
     
     // MARK: - Helper Functions
+    
+    static func nib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
 
     func setup(_ category: DishCategory) {
         categoryLabel.text = category.name

@@ -6,6 +6,7 @@ class HomeController: UIViewController {
 
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var dishesCollectionView: UICollectionView!
+    @IBOutlet weak var specialsCollectionView: UICollectionView!
     
     // MARK: - Properties
 
@@ -29,6 +30,16 @@ class HomeController: UIViewController {
         .init(id: "id9", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
         .init(id: "id10", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted")
     ]
+    
+    var specials: [Dish] = [
+        .init(id: "id1", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
+        .init(id: "id2", name: "Pasta", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
+        .init(id: "id3", name: "Grilled Cheese", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
+        .init(id: "id4", name: "Pizza", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
+        .init(id: "id5", name: "Burger", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted"),
+        .init(id: "id6", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted")
+    ]
+
 
     // MARK: - LifeCycle
 
@@ -41,20 +52,26 @@ class HomeController: UIViewController {
     // MARK: - Helper Functions
 
     private func configureCollectionViews() {
-        categoryCollectionView.delegate = self
-        categoryCollectionView.dataSource = self
+        let collectionViews = [categoryCollectionView, dishesCollectionView, specialsCollectionView]
         
-        dishesCollectionView.delegate = self
-        dishesCollectionView.dataSource = self
+        collectionViews.forEach({
+            $0?.delegate = self
+            $0?.dataSource = self
+        })
         
         categoryCollectionView.register(
-            UINib(nibName: CategoriesCollectionViewCell.identifier, bundle: nil),
+            CategoriesCollectionViewCell.nib(),
             forCellWithReuseIdentifier: CategoriesCollectionViewCell.identifier
         )
         
         dishesCollectionView.register(
-            UINib(nibName: DishesCollectionViewCell.identifier, bundle: nil),
+            DishesCollectionViewCell.nib(),
             forCellWithReuseIdentifier: DishesCollectionViewCell.identifier
+        )
+        
+        specialsCollectionView.register(
+            SpecialsCollectionViewCell.nib(),
+            forCellWithReuseIdentifier: SpecialsCollectionViewCell.identifier
         )
     }
 
@@ -70,6 +87,8 @@ extension HomeController: UICollectionViewDataSource {
                 return categories.count
             case dishesCollectionView:
                 return dishes.count
+            case specialsCollectionView:
+                return specials.count
             default:
                 return 0
         }
@@ -101,6 +120,19 @@ extension HomeController: UICollectionViewDataSource {
                 }
                 
                 cell.setup(dishes[indexPath.row])
+                return cell
+                
+            case specialsCollectionView:
+                guard
+                    let cell = collectionView.dequeueReusableCell(
+                        withReuseIdentifier: SpecialsCollectionViewCell.identifier,
+                        for: indexPath
+                    ) as? SpecialsCollectionViewCell
+                else {
+                    return UICollectionViewCell()
+                }
+                
+                cell.setup(specials[indexPath.row])
                 return cell
             default:
                 return UICollectionViewCell()

@@ -135,7 +135,7 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-Zg-ivv">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="734"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="722"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjd-IJ-XPz">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="178"/>
@@ -193,11 +193,11 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="300" id="vHN-cc-wKA"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="TPR-fR-ZVu">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TPR-fR-ZVu">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="40" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
                                                     </collectionView>
@@ -214,7 +214,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-Wk-ik6">
-                                                <rect key="frame" x="0.0" y="566" width="428" height="168"/>
+                                                <rect key="frame" x="0.0" y="566" width="428" height="156"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef's Specials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OV-UL-H4D">
                                                         <rect key="frame" x="16" y="16" width="396" height="24"/>
@@ -225,17 +225,17 @@
                                                         <color key="textColor" red="0.86063534019999999" green="0.240141362" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-P1-GMu">
-                                                        <rect key="frame" x="0.0" y="48" width="428" height="120"/>
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wkq-P1-GMu">
+                                                        <rect key="frame" x="0.0" y="56" width="428" height="100"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="120" id="7eL-c6-jB5"/>
+                                                            <constraint firstAttribute="height" constant="100" id="7eL-c6-jB5"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2y6-tn-Aqa">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2y6-tn-Aqa">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
                                                     </collectionView>
@@ -247,7 +247,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="Wkq-P1-GMu" secondAttribute="bottom" id="J7v-Wz-7qH"/>
                                                     <constraint firstAttribute="trailing" secondItem="2OV-UL-H4D" secondAttribute="trailing" constant="16" id="U7G-FY-UaU"/>
                                                     <constraint firstItem="2OV-UL-H4D" firstAttribute="leading" secondItem="w8d-Wk-ik6" secondAttribute="leading" constant="16" id="WBA-JG-Q6v"/>
-                                                    <constraint firstItem="Wkq-P1-GMu" firstAttribute="top" secondItem="2OV-UL-H4D" secondAttribute="bottom" constant="8" id="lza-KS-8Fo"/>
+                                                    <constraint firstItem="Wkq-P1-GMu" firstAttribute="top" secondItem="2OV-UL-H4D" secondAttribute="bottom" constant="16" id="lza-KS-8Fo"/>
                                                     <constraint firstItem="Wkq-P1-GMu" firstAttribute="leading" secondItem="w8d-Wk-ik6" secondAttribute="leading" id="taP-nG-OoP"/>
                                                 </constraints>
                                             </view>
@@ -282,6 +282,7 @@
                     <connections>
                         <outlet property="categoryCollectionView" destination="4sx-cP-7Q5" id="ppi-3V-YUk"/>
                         <outlet property="dishesCollectionView" destination="BaX-hY-wCW" id="sia-hu-BII"/>
+                        <outlet property="specialsCollectionView" destination="Wkq-P1-GMu" id="I28-l7-PDU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPz-jm-Wtm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
