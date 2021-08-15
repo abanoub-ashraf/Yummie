@@ -23,6 +23,9 @@
 		2EF7078726C92EC200BA563B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7078626C92EC200BA563B /* StringExtensions.swift */; };
 		2EF7078B26C9306000BA563B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7078A26C9306000BA563B /* Constants.swift */; };
 		2EF7079026C93E8600BA563B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7078F26C93E8600BA563B /* CardView.swift */; };
+		2EF7079526C94A6700BA563B /* DishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7079326C94A6700BA563B /* DishesCollectionViewCell.swift */; };
+		2EF7079626C94A6700BA563B /* DishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7079426C94A6700BA563B /* DishesCollectionViewCell.xib */; };
+		2EF7079926C94D2F00BA563B /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7079826C94D2F00BA563B /* Dish.swift */; };
 		5C6C3E1CFA675057AAD1D4A0 /* Pods_Yummie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540461BBDE042D708BD7369E /* Pods_Yummie.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		2EF7078626C92EC200BA563B /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2EF7078A26C9306000BA563B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2EF7078F26C93E8600BA563B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2EF7079326C94A6700BA563B /* DishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EF7079426C94A6700BA563B /* DishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EF7079826C94D2F00BA563B /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		540461BBDE042D708BD7369E /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EEB00FD0CFB08CDFC7F22 /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				2EF7078226C92D0700BA563B /* Categories */,
+				2EF7079226C94A3900BA563B /* Dishes */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			children = (
 				2E2E3F5026C90346001858DB /* OnboardingSlideModel.swift */,
 				2EF7077A26C9285500BA563B /* DishCategory.swift */,
+				2EF7079826C94D2F00BA563B /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +216,15 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		2EF7079226C94A3900BA563B /* Dishes */ = {
+			isa = PBXGroup;
+			children = (
+				2EF7079326C94A6700BA563B /* DishesCollectionViewCell.swift */,
+				2EF7079426C94A6700BA563B /* DishesCollectionViewCell.xib */,
+			);
+			path = Dishes;
+			sourceTree = "<group>";
+		};
 		6A355E9E235516358C18BB5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +305,7 @@
 				2E8F400C26C2D5A800EB7007 /* LaunchScreen.storyboard in Resources */,
 				2E8F400926C2D5A800EB7007 /* Assets.xcassets in Resources */,
 				2E8F400726C2D5A500EB7007 /* Main.storyboard in Resources */,
+				2EF7079626C94A6700BA563B /* DishesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,9 +363,11 @@
 				2E75257E26C8FC770013F6A9 /* OnboardingController.swift in Sources */,
 				2EF7078726C92EC200BA563B /* StringExtensions.swift in Sources */,
 				2EF7077726C926AC00BA563B /* CategoriesCollectionViewCell.swift in Sources */,
+				2EF7079526C94A6700BA563B /* DishesCollectionViewCell.swift in Sources */,
 				2E2E3F5B26C91C9E001858DB /* HomeController.swift in Sources */,
 				2E8F400026C2D5A500EB7007 /* AppDelegate.swift in Sources */,
 				2E2E3F4D26C901E1001858DB /* UIViewExtensions.swift in Sources */,
+				2EF7079926C94D2F00BA563B /* Dish.swift in Sources */,
 				2E8F400226C2D5A500EB7007 /* SceneDelegate.swift in Sources */,
 				2EF7077B26C9285500BA563B /* DishCategory.swift in Sources */,
 				2EF7079026C93E8600BA563B /* CardView.swift in Sources */,

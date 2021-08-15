@@ -23,7 +23,7 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     func setup(_ category: DishCategory) {
         categoryLabel.text = category.name
         
-        categoryImageView.kf.setImage(with: category.image.asURL, placeholder: Constants.categoryPlaceholderImage)
+        categoryImageView.kf.setImage(with: category.image?.asURL, placeholder: Constants.categoryPlaceholderImage)
     }
 
 }
