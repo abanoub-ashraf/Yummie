@@ -28,6 +28,7 @@
 		2EF7079926C94D2F00BA563B /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7079826C94D2F00BA563B /* Dish.swift */; };
 		2EF7079E26C963FB00BA563B /* SpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF7079C26C963FB00BA563B /* SpecialsCollectionViewCell.swift */; };
 		2EF7079F26C963FB00BA563B /* SpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF7079D26C963FB00BA563B /* SpecialsCollectionViewCell.xib */; };
+		2EF707B226C97BED00BA563B /* DishDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF707B126C97BED00BA563B /* DishDetailsController.swift */; };
 		5C6C3E1CFA675057AAD1D4A0 /* Pods_Yummie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540461BBDE042D708BD7369E /* Pods_Yummie.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		2EF7079826C94D2F00BA563B /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		2EF7079C26C963FB00BA563B /* SpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
 		2EF7079D26C963FB00BA563B /* SpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EF707B126C97BED00BA563B /* DishDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsController.swift; sourceTree = "<group>"; };
 		540461BBDE042D708BD7369E /* Pods_Yummie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yummie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EEB00FD0CFB08CDFC7F22 /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,8 +143,8 @@
 		2E75257A26C8F8970013F6A9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2EF707AF26C9768F00BA563B /* Core */,
 				2E75257C26C8F9400013F6A9 /* Onboarding */,
-				2E2E3F5A26C91C9E001858DB /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,6 +239,15 @@
 				2EF7079D26C963FB00BA563B /* SpecialsCollectionViewCell.xib */,
 			);
 			path = ChefSpecials;
+			sourceTree = "<group>";
+		};
+		2EF707AF26C9768F00BA563B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2E2E3F5A26C91C9E001858DB /* HomeController.swift */,
+				2EF707B126C97BED00BA563B /* DishDetailsController.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		6A355E9E235516358C18BB5D /* Pods */ = {
@@ -381,6 +392,7 @@
 				2EF7077726C926AC00BA563B /* CategoriesCollectionViewCell.swift in Sources */,
 				2EF7079526C94A6700BA563B /* DishesCollectionViewCell.swift in Sources */,
 				2E2E3F5B26C91C9E001858DB /* HomeController.swift in Sources */,
+				2EF707B226C97BED00BA563B /* DishDetailsController.swift in Sources */,
 				2E8F400026C2D5A500EB7007 /* AppDelegate.swift in Sources */,
 				2E2E3F4D26C901E1001858DB /* UIViewExtensions.swift in Sources */,
 				2EF7079926C94D2F00BA563B /* Dish.swift in Sources */,
