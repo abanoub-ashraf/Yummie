@@ -10,6 +10,7 @@
 		2E2E3F4D26C901E1001858DB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F4C26C901E1001858DB /* UIViewExtensions.swift */; };
 		2E2E3F5126C90346001858DB /* OnboardingSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F5026C90346001858DB /* OnboardingSlideModel.swift */; };
 		2E2E3F5526C905EF001858DB /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F5426C905EF001858DB /* OnboardingCollectionViewCell.swift */; };
+		2E2E3F5B26C91C9E001858DB /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F5A26C91C9E001858DB /* HomeController.swift */; };
 		2E75257E26C8FC770013F6A9 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75257D26C8FC770013F6A9 /* OnboardingController.swift */; };
 		2E8F400026C2D5A500EB7007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F3FFF26C2D5A500EB7007 /* AppDelegate.swift */; };
 		2E8F400226C2D5A500EB7007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8F400126C2D5A500EB7007 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 		2E2E3F4C26C901E1001858DB /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		2E2E3F5026C90346001858DB /* OnboardingSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideModel.swift; sourceTree = "<group>"; };
 		2E2E3F5426C905EF001858DB /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E2E3F5A26C91C9E001858DB /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		2E75257D26C8FC770013F6A9 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		2E8F3FFC26C2D5A500EB7007 /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8F3FFF26C2D5A500EB7007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				2E75257C26C8F9400013F6A9 /* Onboarding */,
+				2E2E3F5A26C91C9E001858DB /* HomeController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				2E2E3F5126C90346001858DB /* OnboardingSlideModel.swift in Sources */,
 				2E75257E26C8FC770013F6A9 /* OnboardingController.swift in Sources */,
+				2E2E3F5B26C91C9E001858DB /* HomeController.swift in Sources */,
 				2E8F400026C2D5A500EB7007 /* AppDelegate.swift in Sources */,
 				2E2E3F4D26C901E1001858DB /* UIViewExtensions.swift in Sources */,
 				2E8F400226C2D5A500EB7007 /* SceneDelegate.swift in Sources */,
