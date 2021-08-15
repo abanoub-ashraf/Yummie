@@ -40,7 +40,6 @@ class HomeController: UIViewController {
         .init(id: "id6", name: "Garri", image: "https://picsum.photos/100/200", calories: 34, description: "This is the best I have ever tasted")
     ]
 
-
     // MARK: - LifeCycle
 
     override func viewDidLoad() {
@@ -146,7 +145,8 @@ extension HomeController: UICollectionViewDataSource {
 extension HomeController: UICollectionViewDelegate {
     
     ///
-    /// - if we clicked on any item of the category collection view do something
+    /// - if we clicked on any item of the category collection view we, wanna go to
+    ///   the list of dishes of that category
     ///
     /// - if we clicked on any item of the dishes or the specials collection views
     ///   switch each case and pass the right item from the equivelant array to
@@ -154,7 +154,15 @@ extension HomeController: UICollectionViewDelegate {
     ///
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoryCollectionView {
-            //
+            let controller = DishesListController.instantiate()
+            
+            ///
+            /// send the category we clicked on to the dishes list of taht category to display
+            /// the name of that category as a title inside that list controller
+            ///
+            controller.category = categories[indexPath.row]
+            
+            navigationController?.pushViewController(controller, animated: true)
         } else {
             ///
             /// instantiate() comes from the view controller extension file
