@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1680C226CAAD5400BF8DC4 /* OrdersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1680C126CAAD5400BF8DC4 /* OrdersListController.swift */; };
 		2E2E3F4D26C901E1001858DB /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F4C26C901E1001858DB /* UIViewExtensions.swift */; };
 		2E2E3F5126C90346001858DB /* OnboardingSlideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F5026C90346001858DB /* OnboardingSlideModel.swift */; };
 		2E2E3F5526C905EF001858DB /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E3F5426C905EF001858DB /* OnboardingCollectionViewCell.swift */; };
@@ -17,6 +18,7 @@
 		2E8F400726C2D5A500EB7007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F400526C2D5A500EB7007 /* Main.storyboard */; };
 		2E8F400926C2D5A800EB7007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F400826C2D5A800EB7007 /* Assets.xcassets */; };
 		2E8F400C26C2D5A800EB7007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8F400A26C2D5A800EB7007 /* LaunchScreen.storyboard */; };
+		2EA14E5926D0552B006406FD /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA14E5826D0552B006406FD /* OrderModel.swift */; };
 		2EEC891526C9B0E20037C58D /* DishesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC891326C9B0E20037C58D /* DishesListTableViewCell.swift */; };
 		2EEC891626C9B0E20037C58D /* DishesListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EEC891426C9B0E20037C58D /* DishesListTableViewCell.xib */; };
 		2EEC891926C9B5F60037C58D /* DishesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC891826C9B5F60037C58D /* DishesListController.swift */; };
@@ -38,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		192235B228A09A5A73EDC2CC /* Pods-Yummie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.release.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.release.xcconfig"; sourceTree = "<group>"; };
+		2E1680C126CAAD5400BF8DC4 /* OrdersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListController.swift; sourceTree = "<group>"; };
 		2E2E3F4C26C901E1001858DB /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		2E2E3F5026C90346001858DB /* OnboardingSlideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlideModel.swift; sourceTree = "<group>"; };
 		2E2E3F5426C905EF001858DB /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		2E8F400826C2D5A800EB7007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E8F400B26C2D5A800EB7007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E8F400D26C2D5A800EB7007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA14E5826D0552B006406FD /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		2EEC891326C9B0E20037C58D /* DishesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesListTableViewCell.swift; sourceTree = "<group>"; };
 		2EEC891426C9B0E20037C58D /* DishesListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesListTableViewCell.xib; sourceTree = "<group>"; };
 		2EEC891826C9B5F60037C58D /* DishesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesListController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				2E2E3F5026C90346001858DB /* OnboardingSlideModel.swift */,
 				2EF7077A26C9285500BA563B /* DishCategory.swift */,
 				2EF7079826C94D2F00BA563B /* Dish.swift */,
+				2EA14E5826D0552B006406FD /* OrderModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 				2E2E3F5A26C91C9E001858DB /* HomeController.swift */,
 				2EF707B126C97BED00BA563B /* DishDetailsController.swift */,
 				2EEC891826C9B5F60037C58D /* DishesListController.swift */,
+				2E1680C126CAAD5400BF8DC4 /* OrdersListController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -423,8 +429,10 @@
 				2EF7077726C926AC00BA563B /* CategoriesCollectionViewCell.swift in Sources */,
 				2EF7079526C94A6700BA563B /* DishesCollectionViewCell.swift in Sources */,
 				2E2E3F5B26C91C9E001858DB /* HomeController.swift in Sources */,
+				2EA14E5926D0552B006406FD /* OrderModel.swift in Sources */,
 				2EF707B226C97BED00BA563B /* DishDetailsController.swift in Sources */,
 				2EEC891926C9B5F60037C58D /* DishesListController.swift in Sources */,
+				2E1680C226CAAD5400BF8DC4 /* OrdersListController.swift in Sources */,
 				2E8F400026C2D5A500EB7007 /* AppDelegate.swift in Sources */,
 				2E2E3F4D26C901E1001858DB /* UIViewExtensions.swift in Sources */,
 				2EF7079926C94D2F00BA563B /* Dish.swift in Sources */,

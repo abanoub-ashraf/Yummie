@@ -25,4 +25,10 @@ class DishesListTableViewCell: UITableViewCell {
         dishDescription.text = dish.description
     }
     
+    func setupOrder(order: OrderModel) {
+        dishImage.kf.setImage(with: order.dish?.image?.asURL, placeholder: Constants.categoryPlaceholderImage)
+        dishTitle.text = order.dish?.name
+        dishDescription.text = order.name
+    }
+    
 }
