@@ -45,17 +45,33 @@ class HomeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchAllDishesFromAPI()
         configureCollectionViews()
     }
     
     // MARK: - Helper Functions
+    
+    private func fetchAllDishesFromAPI() {
+        NetworkManager.shared.fetchAllCategories { [weak self] result in
+            switch result {
+                case .success(let allDishes):
+                    print("it was successful")
+                case .failure(let error):
+                    print("the error is: \(error.localizedDescription)")
+            }
+        }
+    }
 
     private func configureCollectionViews() {
-        let collectionViews = [categoryCollectionView, dishesCollectionView, specialsCollectionView]
+        let collectionViews = [
+            categoryCollectionView,
+            dishesCollectionView,
+            specialsCollectionView
+        ]
         
         collectionViews.forEach({
-            $0?.delegate = self
-            $0?.dataSource = self
+            $0?.delegate    = self
+            $0?.dataSource  = self
         })
         
         categoryCollectionView.register(

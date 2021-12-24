@@ -10,4 +10,8 @@ struct Constants {
     
     static let borderColor = UIColor(named: "borderColor")
     
+    // MARK: - Networking
+    
+    static let baseUrl = "https://yummie.glitch.me"
+    
 }

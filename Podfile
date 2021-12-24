@@ -5,5 +5,6 @@ target 'Yummie' do
   use_frameworks!
 
   pod 'Kingfisher'
+  pod 'ProgressHUD'
 
 end
